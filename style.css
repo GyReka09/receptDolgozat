@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+h1 {
+  padding-top: 15px;
+  text-align: center;
+}
+main {
+  border: 1px solid black;
+  width: 80%;
+  max-width: 800px;
+}
+nav li {
+  list-style-type: none;
+}
+nav {
+  padding: 20px;
+  border: 1px solid black;
+}
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.receptDarab h5 {
+  border: 1px solid black;
+}
+.receptDarab img {
+  width: 200px;
+  max-height: 112px;
+}
+.receptDarab {
+  padding: 10px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.egesz {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.arecept {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.arecept img {
+  max-width: 200px;
+  padding-bottom: 15px;
+  grid-column: 3;
+}
+.arecept ul {
+  border: 1px solid black;
+  grid-column: 1/2;
+}
+.arecept h3 {
+  text-align: center;
+  padding-top: 10px;
+  border: 1px solid black;
+}
+.arecept p {
+  border: 1px solid black;
+}
+.kiv {
+  margin: auto;
+}
+.egesz button {
+  height: 30px;
+}
+@media (max-width: 700px) {
+  ul {
+    grid-template-columns: 1fr;
+  }
+
+  article {
+    grid-template-columns: 1fr;
+  }
+
+  .egesz {
+    grid-template-columns: 1fr;
+  }
+
+  .arecept {
+    grid-template-columns: 1fr;
+  }
+
+  .arecept img {
+    grid-column: auto;
+    justify-self: center;
+  }
+
+  .arecept ul {
+    grid-column: auto;
+  }
+}
